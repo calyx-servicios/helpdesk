@@ -1,0 +1,21 @@
+<odoo>
+
+    <record id="view_helpdesk_ticket_team_form" model="ir.ui.view">
+        <field name="name">Add Team Specific Properties</field>
+        <field name="model">helpdesk.ticket.team</field>
+        <field name="inherit_id" ref="helpdesk_mgmt.view_helpdesk_team_form"/>
+        <field name="arch" type="xml">
+            <field name="alias_user_id" position="after">
+                        <field name="tag_ids"/>
+                        <field name="category_ids"/>
+                        <field name="stage_ids"/>
+                        <field name="motive_ids" />
+            </field>
+        </field>
+    </record>
+    
+</odoo>
+
+<!-- 
+    
+-->
