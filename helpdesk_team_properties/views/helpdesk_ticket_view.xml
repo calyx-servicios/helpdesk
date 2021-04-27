@@ -1,10 +1,13 @@
 <odoo>
 
     <record id="view_helpdesk_ticket_form" model="ir.ui.view">
-        <field name="name">Add Team Specific Properties</field>
+        <field name="name">helpdesk.ticket.view.form</field>
         <field name="model">helpdesk.ticket</field>
         <field name="inherit_id" ref="helpdesk_mgmt.ticket_view_form"/>
         <field name="arch" type="xml">
+            <field name="user_id" position="attributes">
+                <attribute name="domain">[('ticket_team_id', 'in', team_id)]</attribute>
+            </field>
             <field name="category_id" position="attributes">
                 <attribute name="domain">[('team_id', '=', team_id)]</attribute>
             </field>
@@ -13,15 +16,31 @@
             </field>
             <field name="stage_id" position="attributes">
                 <attribute name="domain">[('team_id', '=', team_id)]</attribute>
-            </field>
-
+            </field> 
+            
         </field>
     </record>
     
 </odoo>
 
 
+
 <!-- 
+    <field name="team_id" position="attributes">
+        <attribute name="domain_force">[('id','=','[1,2,3,4,5]')]</attribute>
+    </field>
+    <record id="view_helpdesk_ticket_kanban" model="ir.ui.view">
+        <field name="name">helpdesk.ticket.view.kanban.inherit</field>
+        <field name="model">helpdesk.ticket</field>
+        <field name="inherit_id" ref="helpdesk_mgmt.view_helpdesk_ticket_kanban"/>
+        <field name="arch" type="xml">
+            <field name="stage_id" position = "attributes">
+                <attribute name="domain">[]</attribute>
+            </field>
+        </field>
+    </record>
+    
+    <attribute name="requiered">1</attribute>
     <field name="stage_ids"/>
     
     <field name="motive_ids" />
