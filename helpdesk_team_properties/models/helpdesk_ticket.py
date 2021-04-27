@@ -4,14 +4,7 @@ from odoo import api, fields, models
 class HelpdeskTicket(models.Model):
     _inherit = 'helpdesk.ticket'
 
-    tag_ids = fields.Many2many(
-        "helpdesk.ticket.tag", string="tag", help="tag")
-
-
-'''
-    @api.multi
-    @api.onchange('team_id', 'user_id')
-    def _onchange_dominion_user_id(self):
-        super()._onchange_dominion_user_id()
-        self.tag_id = False
-'''
+    #@api.model
+    def _read_group_stage_ids(self, stages, domain, order):
+        stage_ids = self.env['helpdesk.ticket.stage'].search([('team_id','in',self.user_id.team_id)])
+        return stage_ids
