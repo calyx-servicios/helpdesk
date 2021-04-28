@@ -7,3 +7,4 @@ class HelpdeskTicketStage(models.Model):
     team_id = fields.Many2one(
         comodel_name = 'helpdesk.ticket.team'
     )
+    
