@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
+2 conf
     <record id="helpdesk_ticket_team_rule" model="ir.rule">
         <field name="name">Helpdesk Ticket Team Rule</field>
         <field name="model_id" ref="helpdesk_mgmt.model_helpdesk_ticket"/>
         <field name="global" eval="True"/>
         <field name="domain_force">['|',('team_id','=',False),('user_ids','in',[user.id])]</field>
     </record>
-    
+
     <record id="helpdesk_ticket_team_team_rule" model="ir.rule">
         <field name="name">Helpdesk Ticket Team Team Rule</field>
         <field name="model_id" ref="helpdesk_mgmt.model_helpdesk_ticket_team"/>
         <field name="global" eval="True"/>
         <field name="domain_force">[('user_ids','in',[user.id])]</field>
     </record>
-        
+
 </odoo>
 <!-- 
     user.ids es el campo m2m de miembros de team
