@@ -1,6 +1,6 @@
-=============
-New Module
-=============
+===============
+Team Properties
+===============
 
 .. !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! This file is intended to be in every module    !!
@@ -23,31 +23,30 @@ New Module
 
 .. !!! Description must be max 2-3 paragraphs, and is required.
 
-This module extends the functionality of ... to support ... and to allow you to ...
+This module extends the functionality of Helpdesk to support team specific tags, categories and stages and to allow you to specify different properties by team 
 
 **Table of contents**
 
 .. contents::
    :local:
 
-.. !!! Instalation: must only be present if there are very specific installation instructions, such as installing non-python dependencies.The audience is systems administrators. ] To install this module, you need to: !!!
-
-Install
-=======
-
-Do this ...
-
 .. !!! Configuration: This file is optional, it should explain how to configure the module before using it; it is aimed at advanced users. To configure this module, you need to:
 
 Configure
 =========
 
-Go to ...
+* Go to Helpdesk > Configuration > Teams
+* Create your teams and create their propertieslist of different motives with their name and teams
+or
+* Go to Helpdesk > Configuration > Tags, Stages or Categories
+* Create your list of different properties with their name and teams
+
 
 Usage
 =====
 
-1. Go to ...
+* Go to Helpdesk
+* The list of motives is properties by the team.
 
 Known issues / Roadmap
 ======================
@@ -72,9 +71,7 @@ Contributors
 
 * `Calyx Servicios S.A. <http://odoo.calyx-cloud.com.ar/>`_
   
-  * Lucas Soto
-  * Jhone Mendez
-  * Federico Gregori
+  * Marco Oegg
 
 Maintainers
 ~~~~~~~~~~~

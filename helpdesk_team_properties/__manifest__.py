@@ -4,8 +4,8 @@
     'summary': """
         Team specific tags, categories and stages""",
 
-    'author': 'Calyx Servicios S.A., Odoo Community Association (OCA)',
-    'maintainers': ['Github/marcooegg'],
+    'author': 'Calyx Servicios S.A.)',
+    'maintainers': ['marcooegg'],
 
     'website': 'http://odoo.calyx-cloud.com.ar/',
     'license': 'AGPL-3',
