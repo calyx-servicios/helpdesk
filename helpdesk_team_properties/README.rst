@@ -1,6 +1,6 @@
-=============
-New Module
-=============
+===============
+Team Properties
+===============
 
 .. !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! This file is intended to be in every module    !!
@@ -23,7 +23,7 @@ New Module
 
 .. !!! Description must be max 2-3 paragraphs, and is required.
 
-This module extends the functionality of ... to support ... and to allow you to ...
+This module extends the functionality of Helpdesk to support team specific tags, categories and stages and to allow more customizable tickets management
 
 **Table of contents**
 
@@ -42,12 +42,19 @@ Do this ...
 Configure
 =========
 
-Go to ...
-
+* Go to Helpdesk > Configuration > Teams
+* Create new tags, stages and categories for the team
+or
+* Go to Helpdesk > Configuration > Tags
+				 > Stages
+				 > Categories
+* Create your list of different properties with their name and teams
 Usage
 =====
 
-1. Go to ...
+* Go to Helpdesk
+* Create a ticket and set its Tags, stages and categories. The list of properties is limited by the team.
+
 
 Known issues / Roadmap
 ======================
@@ -72,9 +79,7 @@ Contributors
 
 * `Calyx Servicios S.A. <http://odoo.calyx-cloud.com.ar/>`_
   
-  * Lucas Soto
-  * Jhone Mendez
-  * Federico Gregori
+  * Marco Oegg
 
 Maintainers
 ~~~~~~~~~~~

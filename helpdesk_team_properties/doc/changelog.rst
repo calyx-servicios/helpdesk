@@ -1,5 +1,4 @@
 V 1.0
+Added relational fields between team and stage, tag and category
+They can be assigned from team configuration or from each fields configuration view
 
-Se agregan campos relacionales entre Team y stage, tag y category.
-Estos se asignan como administrador desde la configuracion de Equipos 
-o bien desde la configuracion de cada campo

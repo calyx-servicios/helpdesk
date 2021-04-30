@@ -4,8 +4,8 @@
     'summary': """
         Team specific tags, categories and stages""",
 
-    'author': 'Calyx Servicios S.A., Odoo Community Association (OCA)',
-    'maintainers': ['Github/marcooegg'],
+    'author': 'Calyx Servicios S.A.',
+    'maintainers': ['marcooegg'],
 
     'website': 'http://odoo.calyx-cloud.com.ar/',
     'license': 'AGPL-3',
@@ -30,13 +30,11 @@
 
     # always loaded
      'data': [
-    #     'security/ir.model.access.csv',
           'views/helpdesk_ticket_team_view.xml',
           'views/helpdesk_ticket_view.xml',
           'views/helpdesk_ticket_tag_view.xml',
           'views/helpdesk_ticket_category_view.xml',
           'views/helpdesk_ticket_stage_view.xml',
-    #     'views/templates.xml',
      ],
 
     # only loaded in demonstration mode
