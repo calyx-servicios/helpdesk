@@ -68,8 +68,9 @@ Contributors
   * Lucas Soto
   * Jhone Mendez
   * Federico Gregori
-  * Marco Oegg
   * Andres Andrade
+  * Marco Oegg
+  
 
 Maintainers
 ~~~~~~~~~~~

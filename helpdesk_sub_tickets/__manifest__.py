@@ -30,8 +30,7 @@
 
     # always loaded
      'data': [
-         'views/helpdesk_ticket_view.xml',
-         'views/helpdesk_ticket_action.xml'
+         'views/helpdesk_ticket_view.xml'
      ],
 
     # only loaded in demonstration mode

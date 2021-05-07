@@ -16,6 +16,11 @@ class HelpdeskTicket(models.Model):
         string = 'Child Tickets'
     )
 
+    parent_title = fields.Char('Title', 
+    related = 'parent_id.name',
+    readonly= True)
+
+    
     #prevents recursive relationships
     @api.constrains('parent_id')
     def _check_hierarchy(self):
