@@ -1,6 +1,6 @@
-===============
-Team Properties
-===============
+=============
+Partner Alias
+=============
 
 .. !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    !! This file is intended to be in every module    !!
@@ -23,48 +23,18 @@ Team Properties
 
 .. !!! Description must be max 2-3 paragraphs, and is required.
 
-This module extends the functionality of Helpdesk to support team specific tags, categories and stages and to allow more customizable tickets management
+This module extends the functionality of Helpdesk. Adds a partner alias for companies to be used instead of Company Name for easier company management
 
 **Table of contents**
 
 .. contents::
    :local:
 
-.. !!! Instalation: must only be present if there are very specific installation instructions, such as installing non-python dependencies.The audience is systems administrators. ] To install this module, you need to: !!!
-
-Install
-=======
-
-Do this ...
-
-.. !!! Configuration: This file is optional, it should explain how to configure the module before using it; it is aimed at advanced users. To configure this module, you need to:
-
-Configure
-=========
-
-* Go to Helpdesk > Configuration > Teams
-* Create new tags, stages and categories for the team
-or
-* Go to Helpdesk > Configuration > Tags
-				 > Stages
-				 > Categories
-* Create your list of different properties with their name and teams
 Usage
 =====
 
-* Go to Helpdesk
-* Create a ticket and set its Tags, stages and categories. The list of properties is limited by the team.
+1. Go to Contacts and add a company alias. 
 
-
-Known issues / Roadmap
-======================
-
-* Bugs or Roadmap
-
-Bug Tracker
-===========
-
-* Help Contact
 
 Credits
 =======
@@ -79,7 +49,11 @@ Contributors
 
 * `Calyx Servicios S.A. <http://odoo.calyx-cloud.com.ar/>`_
   
-  * Marco Oegg
+  * Lucas Soto
+  * Jhone Mendez
+  * Federico Gregori
+  * Andres Andrade
+  * Oegg Marco
 
 Maintainers
 ~~~~~~~~~~~
