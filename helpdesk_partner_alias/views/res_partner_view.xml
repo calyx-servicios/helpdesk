@@ -7,7 +7,7 @@
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
             <field name="lang" position = "after">
-                <field name="helpdesk_alias" attrs = "{'invisible': [('is_company','=',False)]}"/>
+                <field name="helpdesk_alias"/>
             </field>
         </field>
     </record>
