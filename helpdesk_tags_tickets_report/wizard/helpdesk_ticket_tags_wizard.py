@@ -20,20 +20,27 @@ class AccountMoveFYReport(models.TransientModel):
         # ################
         # Tickets Query
         # ################
-        ticket_objs = self.env["helpdesk.ticket"].search(
-            [
-                ("create_date", ">=", self.date_from),
-                ("create_date", "<=", self.date_to),
-                ("team_id", "=", self.team_id.id),
-                ("user_id", "=", self.user_id.id),
-                ("partner_id", "=", self.partner_id.id),
-                ("category_id", "=", self.category_id.id),
-                ("motive_id", "=", self.motive_id.id),
-                ("tag_ids", "=", self.tag_id.ids),
-                ("company_id", "=", self.env.user.company_id.id),
-            ],
-            order="create_date asc",
-        )
+
+        query = [
+            ("team_id", "=", self.team_id.id),
+            ("tag_ids", "in", self.tag_id.ids),
+            ("company_id", "=", self.env.user.company_id.id),
+        ]
+
+        if self.date_from:
+            query.append(("create_date", ">=", self.date_from))
+        if self.date_to:
+            query.append(("create_date", "<=", self.date_to))
+        if self.user_id:
+            query.append(("user_id", "=", self.user_id.id))
+        if self.partner_id:
+            query.append(("partner_id", "=", self.partner_id.id))
+        if self.category_id:
+            query.append(("category_id", "=", self.category_id.id))
+        if self.motive_id:
+            query.append(("motive_id", "=", self.motive_id.id))
+
+        ticket_objs = self.env["helpdesk.ticket"].search(query, order="create_date asc")
 
         # ##########################
         # Data Form
