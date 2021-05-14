@@ -1,0 +1,47 @@
+<odoo>
+    
+    
+    <record id="inherit_view_helpdesk_ticket_form" model="ir.ui.view">
+        <field name="name">hepdesk_ticket.view.form.ticket</field>
+        <field name="model">helpdesk.ticket</field>
+        <field name="inherit_id" ref="helpdesk_mgmt.ticket_view_form"/>
+        <field name="arch" type="xml">
+            <field name="partner_name" position = 'replace' >
+                <field name="partner_alias"/>
+            </field>
+        </field>
+    </record>
+    
+    <record id="ticket_view_tree_inherit_helpdesk" model="ir.ui.view">
+        <field name="name">helpdesk.ticket.view.tree.inherit</field>
+        <field name="model">helpdesk.ticket</field>
+        <field name="inherit_id" ref="helpdesk_mgmt.ticket_view_tree"/>
+        <field name="arch" type="xml">
+            <field name="partner_name" position = 'replace' >
+                <field name="partner_alias" />
+            </field>
+        </field>
+    </record>
+</odoo>
+<!--
+
+
+
+    <record id="ticket_view_search_inherit_helpdesk" model="ir.ui.view">
+        <field name="name">helpdesk.ticket.view.search.inherit</field>
+        <field name="model">helpdesk.ticket</field>
+        <field name="inherit_id" ref="helpdesk_mgmt.ticket_view_search"/>
+        <field name="arch" type="xml">
+            <field name="partner_name" position = 'replace' >
+                <field name="partner_alias" string = "Partner Name" />
+            </field>
+        </field>
+    </record>
+    <field name="partner_id" position = 'after' >
+        <field name="helpdesk_alias"/>
+    </field>
+    <field name="partner_name" position = 'attributes' >
+        <attribute name="invisible">1</attribute>
+    </field>
+
+-->
