@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="helpdesk_tickets_tags_wizard_view" model="ir.ui.view">
+        <field name="name">Helpdesk Tickets Tags Report Wizard View</field>
+        <field name="model">helpdesk.ticket.tags.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <group>
+                        <field name="date_from"/>
+                        <field name="date_to"/>
+                        <field name="team_id" options="{'no_open':True,'no_create':1,'no_create_edit':1}"/>
+                        <field name="user_id" options="{'no_open':True,'no_create':1,'no_create_edit':1}"/>
+                    </group>
+                    <group>
+                        <field name="partner_id" options="{'no_open':True,'no_create':1,'no_create_edit':1}"/>
+                        <field name="category_id" options="{'no_open':True,'no_create':1,'no_create_edit':1}"/>
+                        <field name="motive_id" options="{'no_open':True,'no_create':1,'no_create_edit':1}"/>
+                        <field name="tag_id" widget="many2many_tags" options="{'no_open':True,'no_create':1,'no_create_edit':1}" />
+                    </group>
+                </group>
+                <footer>
+                    <button name="print_report" string="Print" type="object" class="oe_highlight" />
+                    <button special="cancel" string="Cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <act_window id="helpdesk_tickets_tags_wizard_action" name="Helpdesk Tickets Tags Report" res_model="helpdesk.ticket.tags.wizard" view_type="form" view_mode="form" target="new" />
+
+    <menuitem id="helpdesk_tickets_tags_wizard_menu" name="Helpdesk Tickets Tags Report" parent="helpdesk_mgmt.helpdesk_ticket_reporting_menu" action="helpdesk_tickets_tags_wizard_action" />
+
+</odoo>
