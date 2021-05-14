@@ -1,0 +1,169 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* helpdesk_tags_tickets_report
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-14 00:25+0000\n"
+"PO-Revision-Date: 2021-05-14 00:25+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: helpdesk_tags_tickets_report
+#: model:ir.model.fields,field_description:helpdesk_tags_tickets_report.field_helpdesk_ticket_tags_wizard_user_id
+#: model:ir.ui.view,arch_db:helpdesk_tags_tickets_report.helpdesk_ticket_template
+msgid "Assigned User"
+msgstr "Usuario Asignado"
+
+#. module: helpdesk_tags_tickets_report
+#: model:ir.ui.view,arch_db:helpdesk_tags_tickets_report.helpdesk_tickets_tags_wizard_view
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: helpdesk_tags_tickets_report
+#: model:ir.model.fields,field_description:helpdesk_tags_tickets_report.field_helpdesk_ticket_tags_wizard_category_id
+#: model:ir.ui.view,arch_db:helpdesk_tags_tickets_report.helpdesk_ticket_template
+msgid "Category"
+msgstr "Categoría"
+
+#. module: helpdesk_tags_tickets_report
+#: model:ir.model.fields,field_description:helpdesk_tags_tickets_report.field_helpdesk_ticket_tags_wizard_partner_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: helpdesk_tags_tickets_report
+#: model:ir.ui.view,arch_db:helpdesk_tags_tickets_report.helpdesk_ticket_template
+msgid "Company/Name"
+msgstr "Compañía/Nombre"
+
+#. module: helpdesk_tags_tickets_report
+#: model:ir.ui.view,arch_db:helpdesk_tags_tickets_report.helpdesk_ticket_template
+msgid "Created"
+msgstr "Creado el"
+
+#. module: helpdesk_tags_tickets_report
+#: model:ir.model.fields,field_description:helpdesk_tags_tickets_report.field_helpdesk_ticket_tags_wizard_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: helpdesk_tags_tickets_report
+#: model:ir.model.fields,field_description:helpdesk_tags_tickets_report.field_helpdesk_ticket_tags_wizard_create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: helpdesk_tags_tickets_report
+#: model:ir.model.fields,field_description:helpdesk_tags_tickets_report.field_helpdesk_ticket_tags_wizard_date_from
+msgid "Date From"
+msgstr "Desde"
+
+#. module: helpdesk_tags_tickets_report
+#: model:ir.model.fields,field_description:helpdesk_tags_tickets_report.field_helpdesk_ticket_tags_wizard_date_to
+msgid "Date To"
+msgstr "Hasta"
+
+#. module: helpdesk_tags_tickets_report
+#: model:ir.model.fields,field_description:helpdesk_tags_tickets_report.field_helpdesk_ticket_tags_wizard_display_name
+#: model:ir.model.fields,field_description:helpdesk_tags_tickets_report.field_report_helpdesk_tags_tickets_report_helpdesk_ticket_template_display_name
+msgid "Display Name"
+msgstr "Mostrar Nombre"
+
+#. module: helpdesk_tags_tickets_report
+#: model:ir.model.fields,field_description:helpdesk_tags_tickets_report.field_helpdesk_ticket_tags_wizard_team_id
+msgid "Helpdesk Team"
+msgstr "Equipo GdS"
+
+#. module: helpdesk_tags_tickets_report
+#: model:ir.actions.act_window,name:helpdesk_tags_tickets_report.helpdesk_tickets_tags_wizard_action
+#: model:ir.ui.menu,name:helpdesk_tags_tickets_report.helpdesk_tickets_tags_wizard_menu
+msgid "Helpdesk Tickets Tags Report"
+msgstr "Informes de Tickets por Etiquetas"
+
+#. module: helpdesk_tags_tickets_report
+#: model:ir.model.fields,field_description:helpdesk_tags_tickets_report.field_helpdesk_ticket_tags_wizard_id
+#: model:ir.model.fields,field_description:helpdesk_tags_tickets_report.field_report_helpdesk_tags_tickets_report_helpdesk_ticket_template_id
+msgid "ID"
+msgstr "ID"
+
+#. module: helpdesk_tags_tickets_report
+#: model:ir.model.fields,field_description:helpdesk_tags_tickets_report.field_helpdesk_ticket_tags_wizard___last_update
+#: model:ir.model.fields,field_description:helpdesk_tags_tickets_report.field_report_helpdesk_tags_tickets_report_helpdesk_ticket_template___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: helpdesk_tags_tickets_report
+#: model:ir.model.fields,field_description:helpdesk_tags_tickets_report.field_helpdesk_ticket_tags_wizard_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización realizada por"
+
+#. module: helpdesk_tags_tickets_report
+#: model:ir.model.fields,field_description:helpdesk_tags_tickets_report.field_helpdesk_ticket_tags_wizard_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: helpdesk_tags_tickets_report
+#: model:ir.model.fields,field_description:helpdesk_tags_tickets_report.field_helpdesk_ticket_tags_wizard_motive_id
+#: model:ir.ui.view,arch_db:helpdesk_tags_tickets_report.helpdesk_ticket_template
+msgid "Motive"
+msgstr "Motivo"
+
+#. module: helpdesk_tags_tickets_report
+#: model:ir.ui.view,arch_db:helpdesk_tags_tickets_report.helpdesk_tickets_tags_wizard_view
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: helpdesk_tags_tickets_report
+#: model:ir.ui.view,arch_db:helpdesk_tags_tickets_report.helpdesk_ticket_template
+msgid "Stage"
+msgstr "Etapa"
+
+#. module: helpdesk_tags_tickets_report
+#: model:ir.model.fields,field_description:helpdesk_tags_tickets_report.field_helpdesk_ticket_tags_wizard_tag_id
+msgid "Tag"
+msgstr "Etiqueta"
+
+#. module: helpdesk_tags_tickets_report
+#: model:ir.ui.view,arch_db:helpdesk_tags_tickets_report.helpdesk_ticket_template
+msgid "Tags"
+msgstr "Etiquetas"
+
+#. module: helpdesk_tags_tickets_report
+#: model:ir.ui.view,arch_db:helpdesk_tags_tickets_report.helpdesk_ticket_template
+msgid "Team"
+msgstr "Equipo"
+
+#. module: helpdesk_tags_tickets_report
+#: model:ir.ui.view,arch_db:helpdesk_tags_tickets_report.helpdesk_ticket_template
+msgid "Ticket"
+msgstr "Ticket"
+
+#. module: helpdesk_tags_tickets_report
+#: model:ir.ui.view,arch_db:helpdesk_tags_tickets_report.helpdesk_ticket_template
+msgid "Tickets Report"
+msgstr "Reporte de Tickets"
+
+#. module: helpdesk_tags_tickets_report
+#: model:ir.actions.report,name:helpdesk_tags_tickets_report.action_tickets_report
+msgid "Tickets by Tag Report"
+msgstr "Informes de Tickets por Etiquetas"
+
+#. module: helpdesk_tags_tickets_report
+#: model:ir.ui.view,arch_db:helpdesk_tags_tickets_report.helpdesk_ticket_template
+msgid "Title"
+msgstr "Título"
+
+#. module: helpdesk_tags_tickets_report
+#: model:ir.model,name:helpdesk_tags_tickets_report.model_helpdesk_ticket_tags_wizard
+msgid "helpdesk.ticket.tags.wizard"
+msgstr "helpdesk.ticket.tags.wizard"
+
+#. module: helpdesk_tags_tickets_report
+#: model:ir.model,name:helpdesk_tags_tickets_report.model_report_helpdesk_tags_tickets_report_helpdesk_ticket_template
+msgid "report.helpdesk_tags_tickets_report.helpdesk_ticket_template"
+msgstr "report.helpdesk_tags_tickets_report.helpdesk_ticket_template"
+

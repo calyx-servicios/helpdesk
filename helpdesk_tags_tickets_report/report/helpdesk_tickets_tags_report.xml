@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <record id="paperformat_euro_landscape" model="report.paperformat">
+        <field name="name">European A4 Landscape</field>
+        <field name="default" eval="True" />
+        <field name="format">A4</field>
+        <field name="page_height">0</field>
+        <field name="page_width">0</field>
+        <field name="orientation">Landscape</field>
+        <field name="margin_top">40</field>
+        <field name="margin_bottom">23</field>
+        <field name="margin_left">7</field>
+        <field name="margin_right">7</field>
+        <field name="header_line" eval="False" />
+        <field name="header_spacing">35</field>
+        <field name="dpi">90</field>
+    </record>
+
+    <report id="action_tickets_report" string="Tickets by Tag Report" model="helpdesk.ticket" report_type="qweb-pdf" name="helpdesk_tags_tickets_report.helpdesk_ticket_template" paperformat="paperformat_euro_landscape" menu="False"/>
+
+    <template id="helpdesk_ticket_template">
+        <t t-call="web.html_container">
+            <t t-call="web.internal_layout">
+                <div class="page">
+                    <h1 class="text-center">Tickets Report</h1>
+                    <table class="table table-condensed">
+                        <thead class="bg-info">
+                            <tr>
+                                <th class="col-md-1">Created</th>
+                                <th class="col-md-1">Ticket</th>
+                                <th class="col-md-1">Title</th>
+                                <th class="col-md-1">Team</th>
+                                <th class="col-md-2">Assigned User</th>
+                                <th class="col-md-2">Company/Name</th>
+                                <th class="col-md-1">Category</th>
+                                <th class="col-md-1">Motive</th>
+                                <th class="col-md-1">Tags</th>
+                                <th class="col-md-1">Stage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="docs" t-as="o">
+                                <td class="col-md-1">
+                                    <span t-field="o.create_date" t-options="{'widget': 'date'}"/>
+                                </td>
+                                <td class="col-xs-1">
+                                    <span t-field="o.number"/>
+                                </td>
+                                <td class="col-md-1">
+                                    <span t-field="o.name"/>
+                                </td>
+                                <td class="col-md-1">
+                                    <span t-field="o.team_id.display_name"/>
+                                </td>
+                                <td class="col-md-2">
+                                    <span t-field="o.user_id.display_name"/>
+                                </td>
+                                <td class="col-md-2">
+                                    <span t-field="o.partner_id.display_name"/>
+                                </td>
+                                <td class="col-md-1">
+                                    <span t-field="o.category_id.display_name"/>
+                                </td>
+                                <td class="col-md-1">
+                                    <span t-field="o.motive_id.display_name"/>
+                                </td>
+                                <td class="col-md-1">
+                                    <t t-foreach="o.tag_ids" t-as="tag">
+                                        <span t-field="tag.display_name" />
+                                        <br/>
+                                    </t>
+                                </td>
+                                <td class="col-md-1">
+                                    <span t-field="o.stage_id.display_name"/>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>
