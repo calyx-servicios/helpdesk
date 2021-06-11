@@ -7,6 +7,7 @@
         <field name="global" eval="True"/>
         <field name="domain_force">['|',('team_id','=',False),('user_ids','in',[user.id])]</field>
     </record>
+<<<<<<< HEAD
     
 
     <record id="helpdesk_ticket_team_team_rule" model="ir.rule">
@@ -16,8 +17,7 @@
         <field name="domain_force">[('user_ids','in',[user.id])]</field>
     </record>
         
+=======
+>>>>>>> 11.0_fix_team_rule
     
 </odoo>
-<!-- 
-    user.ids es el campo m2m de miembros de team
--->
