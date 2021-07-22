@@ -31,7 +31,6 @@
 
     # always loaded
      'data': [
-         'security/security.xml',
          'views/actions.xml',
      ],
 

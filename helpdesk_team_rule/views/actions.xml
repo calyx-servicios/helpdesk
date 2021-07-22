@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
+    <record id="helpdesk_mgmt.helpdesk_ticket_action" model="ir.actions.act_window">
+        <field name="name">Tickets</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">helpdesk.ticket</field>
+        <field name="view_mode">tree,kanban,form,pivot</field>
+        <field name="view_type">form</field>
+        <field name="context">{'search_default_open': 1}</field>
+        <field name="domain">['|',('team_id','=',False),('user_ids','in',uid)]</field>
+    </record>
+    
     <record id="helpdesk_mgmt.helpdesk_ticket_dashboard_action" model="ir.actions.act_window">
         <field name="name">Dashboard</field>
         <field name="type">ir.actions.act_window</field>
