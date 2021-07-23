@@ -15,7 +15,7 @@
     # Check https://github.com/odoo/odoo/blob/11.0/odoo/addons/base/module/module_data.xml
     # for the full list
     'category': 'Helpdesk',
-    'version': '11.0.2.0.0',
+    'version': '11.0.3.0.0',
     # see https://odoo-community.org/page/development-status
     'development_status': 'Production/Stable',
 
@@ -31,7 +31,6 @@
 
     # always loaded
      'data': [
-         'security/security.xml',
          'views/actions.xml',
      ],
 
